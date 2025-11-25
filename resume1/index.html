@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Software Engineer Portfolio</title>
+    <meta name="description" content="Resume portfolio website of a software engineer" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-row">
+        <a href="#home" class="brand" aria-label="Home">TR</a>
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="actions">
+          <button id="theme-toggle" class="btn secondary" aria-label="Toggle theme">Theme</button>
+          <button id="download-btn" class="btn primary">Download Resume</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="home" class="container">
+      <section class="hero">
+        <h1>Tanush R</h1>
+        <p>
+          Ambitious Computer Science undergraduate with hands-on experience building full-stack web applications (React, Node, MongoDB).
+          Strong foundation in algorithms and data structures, plus real-world project experience (Zerodha clone, Airbnb clone).
+          Preparing for internships at top tech companies; quick learner and collaborative team member.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="#contact" class="btn">Get In Touch</a>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <h2>About</h2>
+        <p>
+          Ambitious Computer Science undergraduate with hands-on experience in full-stack development using React, Node, Express, and MongoDB. Strong foundation in algorithms and data structures with real-world projects like a Zerodha trading interface clone and an Airbnb clone. Actively preparing for internships at top tech companies; quick learner and collaborative team member.
+        </p>
+      </section>
+
+      <section id="skills" class="section">
+        <h2>Skills</h2>
+        <ul class="skills-grid">
+          <li>
+            <h3>Languages</h3>
+            <p>JavaScript, TypeScript</p>
+          </li>
+          <li>
+            <h3>Frontend</h3>
+            <p>React, HTML, CSS</p>
+          </li>
+          <li>
+            <h3>Backend</h3>
+            <p>Node.js, Express, REST APIs, JWT Auth</p>
+          </li>
+          <li>
+            <h3>Tools</h3>
+            <p>MongoDB, Git, CI/CD, Testing</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="experience" class="section">
+        <h2>Experience</h2>
+        <div class="timeline">
+          <article class="card">
+            <h3>Full Stack Project — Zerodha Clone</h3>
+            <p class="meta">Personal • React, Node, Express, MongoDB • 2025 — Present</p>
+            <ul>
+              <li>Built a trading-style UI using React with real-time data simulation and clean component architecture.</li>
+              <li>Implemented backend order matching simulation, REST APIs, and JWT-based auth for users.</li>
+              <li>Deployed app for demo; added automated tests and CI checks.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <article class="card">
+            <h3>Zerodha Clone</h3>
+            <p>Trading-style UI with simulated real-time data and backend matching.</p>
+            <p class="meta">React • Node • Express • MongoDB</p>
+            <a class="btn small" href="#">Demo</a>
+          </article>
+          <article class="card">
+            <h3>API Service</h3>
+            <p>Lightweight service with robust endpoints.</p>
+            <p class="meta">Node.js • Express</p>
+            <a class="btn small" href="#">View</a>
+          </article>
+          <article class="card">
+            <h3>Data Tool</h3>
+            <p>CLI tool for data processing and reports.</p>
+            <p class="meta">TypeScript</p>
+            <a class="btn small" href="#">View</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="education" class="section">
+        <h2>Education</h2>
+        <p>Bachelor of Technology in Computer Science</p>
+      </section>
+
+      <section id="contact" class="section">
+        <h2>Contact</h2>
+        <ul class="contact-list">
+          <li><a href="mailto:you@example.com">you@example.com</a></li>
+          <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Software Engineer</p>
+      </div>
+    </footer>
+  </body>
+</html>
